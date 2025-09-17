@@ -1,0 +1,37 @@
+{
+  "home": {
+    "title": "Eldis Ymeraj",
+    "desc": "Student në Master për Inteligjencë Artificiale dhe Faktorë Njerëzorë në Universitetin e Caen Normandy. Jam kurioz dhe i motivuar, gjithmonë në kërkim të sfidave të reja për të mësuar, për t’u zhvilluar dhe për të përmirësuar aftësitë e mia."
+  },
+  "projects": [
+    { "title": "Handball Tracking", "desc": "Detektim dhe ndjekje e lojtarëve, topit dhe fushës duke përdorur YOLO & ByteTrack.", "linkText": "GitHub" },
+    { "title": "AI për Lojëra", "desc": "AI kundërshtare për Domino dhe Morpion me MinMax & Expectimax.", "linkText": "GitHub" },
+    { "title": "Vizualizim me GraphQL & Docker", "desc": "Aplikacion web interaktiv për vizualizimin e të dhënave me MongoDB & D3.js.", "linkText": "GitHub" },
+    { "title": "ETL & OLAP", "desc": "Magazinë të dhënash dhe kube OLAP të ndërtuara me Apache Hop.", "linkText": "GitHub" },
+    { "title": "Sistem Multi-Agjent (JADE)", "desc": "Implementim i një sistemi multi-agjent duke përdorur bibliotekën JADE për të simuluar një punishte prodhimi.", "linkText": "GitHub" },
+    { "title": "NLP – Transformim Teksti me WordNet & FastText", "desc": "Rishkrim automatik i tekstit duke përdorur marrëdhënie semantike (përkthim, hiponime, antonime) me WordNet dhe FastText.", "linkText": "GitHub" }
+  ],
+  "cv": {
+    "title": "Curriculum Vitae",
+    "download": "Shkarko CV-në time"
+  },
+  "skills": {
+    "Gjuhët e Programimit": ["Python", "Java", "C", "C++", "Prolog", "SQL"],
+    "Machine Learning & AI": ["PyTorch", "TensorFlow", "Scikit-learn", "Reinforcement Learning", "Probabilistic Graphical Models", "Constraint Programming"],
+    "Vision Kompjuterike": ["YOLO", "OpenCV", "ByteTrack"],
+    "Përpunimi i Gjuhës Natyrore (NLP)": ["NLTK", "SpaCy", "FastText", "WordNet"],
+    "Baza të Dhënash & ETL": ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Apache Hop", "Talend", "OLAP", "MDX"],
+    "Mjete & Mjedise": ["Docker", "Git", "Jupyter Notebook", "Linux", "Windows", "LaTeX", "UML", "Office Pack"]
+  },
+  "about": {
+    "title": "Rreth meje",
+    "text": "Unë quhem Eldis Ymeraj dhe jam student në Master për Inteligjencë Artificiale dhe Faktorë Njerëzorë në Universitetin e Caen Normandie. Studimet e mia më ndihmojnë të zhvilloj aftësi të forta në inteligjencë artificiale dhe data science, duke ruajtur një hapje edhe ndaj shkencave humane si psikologjia dhe neuroshkenca.\n\nJam i hapur për mundësi të ndryshme praktike, veçanërisht në fushat e të dhënave, machine learning ose inteligjencës artificiale të aplikuar, qoftë në kërkime, industri apo inovacion teknologjik.\n\nJashtë studimeve, jam i apasionuar pas sportit dhe stërvitem rregullisht në palestër. Më pëlqen gjithashtu leximi, veçanërisht librat shkencorë, historikë dhe politikë, të cilët më ndihmojnë të zgjeroj vizionin tim për botën. Së fundi, më pëlqen të udhëtoj dhe të zbuloj kultura të reja, gjë që më mban gjithmonë kurioz dhe të hapur ndaj të tjerëve.\n\nE konsideroj veten si një person të motivuar, kurioz dhe ambicioz, gjithmonë gati për të mësuar dhe për t’u përballur me sfida të reja."
+  },
+  "contact": {
+    "title": "Kontakto",
+    "email": "eldisymeraj0@gmail.com",
+    "phone": "07.83.88.39.26",
+    "linkedin": "https://linkedin.com/in/eldis-ymeraj-2b5433226",
+    "github": "https://github.com/elymeraj"
+  }
+}

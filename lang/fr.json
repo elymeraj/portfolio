@@ -1,0 +1,37 @@
+{
+  "home": {
+    "title": "Eldis Ymeraj",
+    "desc": "Étudiant en Master d’Intelligence Artificielle et Facteurs Humains à l’Université de Caen Normandie. Je suis curieux et motivé, toujours à la recherche de nouveaux défis pour apprendre, progresser et développer mes compétences."
+  },
+  "projects": [
+  { "title": "Handball Tracking", "desc": "Détection et suivi des joueurs, du ballon et du terrain avec YOLO & ByteTrack.", "linkText": "Lien GitHub" },
+  { "title": "IA pour les Jeux", "desc": "IA adversaire pour le Domino et le Morpion avec MinMax & Expectimax.", "linkText": "Lien GitHub" },
+  { "title": "Visualisation avec GraphQL & Docker", "desc": "Application web interactive pour analyser les données avec MongoDB & D3.js.", "linkText": "Lien GitHub" },
+  { "title": "ETL & OLAP", "desc": "Entrepôt de données & cube OLAP construits avec Apache Hop.", "linkText": "Lien GitHub" },
+  { "title": "Système Multi-Agent (JADE)", "desc": "Implémentation d’un système multi-agent avec la bibliothèque JADE pour simuler un atelier de production.", "linkText": "Lien GitHub" },
+  { "title": "TAL – Réécriture de texte avec WordNet & FastText", "desc": "Réécriture automatique de texte en utilisant des relations sémantiques (traduction, hyponymes, antonymes) avec WordNet et FastText.", "linkText": "Lien GitHub" }
+],
+  "cv": {
+    "title": "Curriculum Vitae",
+    "download": "Télécharger mon CV"
+  },
+  "skills": {
+    "Langages de Programmation": ["Python", "Java", "C", "C++", "Prolog", "SQL"],
+    "Apprentissage Automatique & IA": ["PyTorch", "TensorFlow", "Scikit-learn", "Apprentissage par renforcement", "Graphes probabilistes", "Programmation par contraintes"],
+    "Vision par Ordinateur": ["YOLO", "OpenCV", "ByteTrack"],
+    "TAL": ["NLTK", "SpaCy", "FastText", "WordNet"],
+    "Bases de Données & ETL": ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Apache Hop", "Talend", "OLAP", "MDX"],
+    "Outils & Environnements": ["Docker", "Git", "Jupyter Notebook", "Linux", "Windows", "LaTeX", "UML", "Pack Office"]
+  },
+  "about": {
+    "title": "À propos de moi",
+    "text": "Je m’appelle Eldis Ymeraj et je suis étudiant en Master d’Intelligence Artificielle et Facteurs Humains à l’Université de Caen Normandie. Ma formation me permet de développer des compétences solides en intelligence artificielle et en data science, tout en gardant une ouverture vers les sciences humaines comme la psychologie et la neuroscience.\n\nJe suis ouvert à différentes opportunités de stage, en particulier dans les domaines de la data, du machine learning ou de l’intelligence artificielle appliquée, que ce soit dans la recherche, l’industrie ou l’innovation technologique.\n\nEn dehors de mes études, je suis passionné de sport et je vais régulièrement à la salle de sport. J’aime aussi lire, notamment des ouvrages scientifiques, historiques et politiques, qui élargissent ma vision du monde. Enfin, j’aime voyager et découvrir de nouvelles cultures, ce qui me permet de rester curieux et ouvert aux autres.\n\nJe me considère comme une personne motivée, curieuse et ambitieuse, toujours prête à apprendre et à relever de nouveaux défis."
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "email": "eldisymeraj0@gmail.com",
+    "phone": "07.83.88.39.26",
+    "linkedin": "https://linkedin.com/in/eldis-ymeraj-2b5433226",
+    "github": "https://github.com/elymeraj"
+  }
+}

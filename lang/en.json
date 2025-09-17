@@ -1,0 +1,37 @@
+{
+  "home": {
+    "title": "Eldis Ymeraj",
+    "desc": "Master’s student in Artificial Intelligence and Human Factors at the University of Caen Normandy. I am curious and motivated, always looking for new challenges to learn, grow and improve my skills."
+  },
+  "projects": [
+  { "title": "Handball Tracking", "desc": "Detection & tracking of players, ball and field using YOLO & ByteTrack.", "linkText": "GitHub Link" },
+  { "title": "AI for Games", "desc": "Adversarial AI for Domino and Tic-Tac-Toe using MinMax & Expectimax.", "linkText": "GitHub Link" },
+  { "title": "GraphQL & Docker Visualization", "desc": "Interactive web app for data visualization with MongoDB & D3.js.", "linkText": "GitHub Link" },
+  { "title": "ETL & OLAP", "desc": "Data warehouse & OLAP cube built with Apache Hop.", "linkText": "GitHub Link" },
+  { "title": "Multi-Agent System (JADE)", "desc": "Implementation of a multi-agent system using the JADE library to simulate a production workshop.", "linkText": "GitHub Link" },
+  { "title": "NLP – Text Transformation with WordNet & FastText", "desc": "Automatic text rewriting using semantic relations (translation, hyponyms, antonyms) with WordNet and FastText.", "linkText": "GitHub Link" }
+],
+  "cv": {
+    "title": "Curriculum Vitae",
+    "download": "Download my CV"
+  },
+  "skills": {
+    "Programming Languages": ["Python", "Java", "C", "C++", "Prolog", "SQL"],
+    "Machine Learning & AI": ["PyTorch", "TensorFlow", "Scikit-learn", "Reinforcement Learning", "Probabilistic Graphical Models", "Constraint Programming"],
+    "Computer Vision": ["YOLO", "OpenCV", "ByteTrack"],
+    "NLP": ["NLTK", "SpaCy", "FastText", "WordNet"],
+    "Databases & ETL": ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Apache Hop", "Talend", "OLAP", "MDX"],
+    "Tools & Environments": ["Docker", "Git", "Jupyter Notebook", "Linux", "Windows", "LaTeX", "UML", "Office Pack"]
+  },
+  "about": {
+    "title": "About Me",
+    "text": "My name is Eldis Ymeraj and I am a Master's student in Artificial Intelligence and Human Factors at the University of Caen Normandy. My studies allow me to develop strong skills in artificial intelligence and data science, while also keeping an openness to human sciences such as psychology and neuroscience.\n\nI am open to different internship opportunities, especially in the fields of data, machine learning or applied artificial intelligence, whether in research, industry or technological innovation.\n\nOutside of my studies, I am passionate about sports and I regularly go to the gym. I also enjoy reading, especially scientific, historical and political books, which broaden my vision of the world. Finally, I love traveling and discovering new cultures, which keeps me curious and open-minded.\n\nI consider myself a motivated, curious and ambitious person, always ready to learn and take on new challenges."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "email": "eldisymeraj0@gmail.com",
+    "phone": "07.83.88.39.26",
+    "linkedin": "https://linkedin.com/in/eldis-ymeraj-2b5433226",
+    "github": "https://github.com/elymeraj"
+  }
+}
