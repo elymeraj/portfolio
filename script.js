@@ -1,13 +1,10 @@
-// Sélecteurs
 const enBtn = document.getElementById("en-btn");
 const frBtn = document.getElementById("fr-btn");
-const alBtn = document.getElementById("al-btn"); // ✅ ajouté
+const alBtn = document.getElementById("al-btn"); 
 const skillsList = document.getElementById("skills-list");
 
-// Contenu dynamique (langues)
 let currentLang = "en";
 
-// Charger le fichier JSON selon la langue
 async function loadContent(lang) {
   try {
     const response = await fetch(`lang/${lang}.json`);
@@ -31,10 +28,10 @@ async function loadContent(lang) {
     document.querySelector("#cv h2").textContent = data.cv.title;
     document.querySelector("#cv a").textContent = data.cv.download;
 
-    // Skills (nouveau format avec catégories)
+    // Skills 
     renderSkills(data.skills);
 
-    // About (séparé en paragraphes)
+    // About 
     document.querySelector("#about h2").textContent = data.about.title;
     const aboutTextContainer = document.getElementById("about-text");
     aboutTextContainer.innerHTML = data.about.text
@@ -57,7 +54,7 @@ async function loadContent(lang) {
   }
 }
 
-// Afficher les skills par catégories
+
 function renderSkills(skills) {
   skillsList.innerHTML = "";
 
@@ -95,7 +92,7 @@ alBtn.addEventListener("click", () => {   // ✅ ajouté
   loadContent("al");
 });
 
-// Charger EN par défaut
+//EN par défaut
 loadContent(currentLang);
 
 /* ---- ANIMATIONS AU SCROLL ---- */
