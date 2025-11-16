@@ -1,7 +1,7 @@
 const enBtn = document.getElementById("en-btn");
 const frBtn = document.getElementById("fr-btn");
-const alBtn = document.getElementById("al-btn"); 
 const skillsList = document.getElementById("skills-list");
+const expList = document.getElementById("exp-list");
 
 let currentLang = "en";
 
@@ -14,6 +14,10 @@ async function loadContent(lang) {
     document.getElementById("home-title").textContent = data.home.title;
     document.getElementById("home-desc").textContent = data.home.desc;
 
+    // Experience
+    document.getElementById("exp-title").textContent = data.experience.title;
+    renderExperience(data.experience.items);
+
     // Projects
     const projects = document.querySelectorAll(".project");
     data.projects.forEach((proj, index) => {
@@ -25,89 +29,71 @@ async function loadContent(lang) {
     });
 
     // CV
-    document.querySelector("#cv h2").textContent = data.cv.title;
-    document.querySelector("#cv a").textContent = data.cv.download;
+    document.getElementById("cv-title").textContent = data.cv.title;
+    document.getElementById("cv-download").textContent = data.cv.download;
 
-    // Skills 
+    // Skills
     renderSkills(data.skills);
 
     // About 
-    document.querySelector("#about h2").textContent = data.about.title;
-    const aboutTextContainer = document.getElementById("about-text");
-    aboutTextContainer.innerHTML = data.about.text
-      .split("\n\n")
-      .map(paragraph => `<p>${paragraph}</p>`)
-      .join("");
+    document.getElementById("about-title").textContent = data.about.title;
+    document.getElementById("about-text").innerHTML =
+      data.about.text.split("\n\n").map(p => `<p>${p}</p>`).join("");
 
     // Contact
-    document.querySelector("#contact h2").textContent = data.contact.title;
-    document.querySelector("#contact").querySelectorAll("p")[0].innerHTML =
-      `Email: <a href="mailto:${data.contact.email}">${data.contact.email}</a>`;
-    document.querySelector("#contact").querySelectorAll("p")[1].textContent =
-      `Phone: ${data.contact.phone}`;
-    document.querySelector("#contact").querySelectorAll("p")[2].innerHTML =
+    document.getElementById("contact-title").textContent = data.contact.title;
+    document.getElementById("contact-linkedin").innerHTML =
       `LinkedIn: <a href="${data.contact.linkedin}" target="_blank">eldis-ymeraj</a>`;
-    document.querySelector("#contact").querySelectorAll("p")[3].innerHTML =
+    document.getElementById("contact-github").innerHTML =
       `GitHub: <a href="${data.contact.github}" target="_blank">elymeraj</a>`;
   } catch (error) {
-    console.error("Erreur de chargement du contenu :", error);
+    console.error("Erreur de chargement :", error);
   }
 }
 
+function renderExperience(items) {
+  expList.innerHTML = "";
+  items.forEach(exp => {
+    const div = document.createElement("div");
+    div.classList.add("experience-item");
+    div.innerHTML = `
+      <h3>${exp.role} — ${exp.company}</h3>
+      <p class="exp-date">${exp.date}</p>
+      <ul>
+        ${exp.tasks.map(t => `<li>${t}</li>`).join("")}
+      </ul>
+    `;
+    expList.appendChild(div);
+  });
+}
 
 function renderSkills(skills) {
   skillsList.innerHTML = "";
-
   for (const [category, items] of Object.entries(skills)) {
-    const catDiv = document.createElement("div");
-    catDiv.classList.add("skill-category");
-
-    const title = document.createElement("h3");
-    title.textContent = category;
-    catDiv.appendChild(title);
-
-    const ul = document.createElement("ul");
-    items.forEach(skill => {
-      const li = document.createElement("li");
-      li.textContent = skill;
-      ul.appendChild(li);
-    });
-
-    catDiv.appendChild(ul);
-    skillsList.appendChild(catDiv);
+    const div = document.createElement("div");
+    div.classList.add("skill-category");
+    div.innerHTML = `
+      <h3>${category}</h3>
+      <ul>${items.map(i => `<li>${i}</li>`).join("")}</ul>
+    `;
+    skillsList.appendChild(div);
   }
 }
 
-// Switch buttons
-enBtn.addEventListener("click", () => {
-  currentLang = "en";
-  loadContent("en");
-});
-frBtn.addEventListener("click", () => {
-  currentLang = "fr";
-  loadContent("fr");
-});
-alBtn.addEventListener("click", () => {   // ✅ ajouté
-  currentLang = "al";
-  loadContent("al");
-});
+enBtn.addEventListener("click", () => loadContent("en"));
+frBtn.addEventListener("click", () => loadContent("fr"));
 
-//EN par défaut
 loadContent(currentLang);
 
-/* ---- ANIMATIONS AU SCROLL ---- */
+// Scroll animations
 const sections = document.querySelectorAll("section");
-
 function revealOnScroll() {
   const triggerBottom = window.innerHeight * 0.85;
-
   sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-    if (sectionTop < triggerBottom) {
+    if (section.getBoundingClientRect().top < triggerBottom) {
       section.classList.add("show");
     }
   });
 }
-
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);

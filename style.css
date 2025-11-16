@@ -283,4 +283,31 @@ section.show {
   box-shadow: 0 0 4px rgba(0,0,0,0.3);
 }
 
+#experience {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.experience-item {
+  background: #1f2937;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.experience-item h3 {
+  color: #3b82f6;
+}
+
+.experience-item ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.exp-date {
+  font-style: italic;
+  opacity: 0.8;
+}
 

@@ -1,7 +1,35 @@
 {
   "home": {
     "title": "Eldis Ymeraj",
-    "desc": "Étudiant en Master d’Intelligence Artificielle et Facteurs Humains à l’Université de Caen Normandie. Je suis curieux et motivé, toujours à la recherche de nouveaux défis pour apprendre, progresser et développer mes compétences."
+    "desc": "Étudiant en Master d’Intelligence Artificielle. Passionné par le Machine Learning, la Data Science et la recherche appliquée."
+  },
+
+  "experience": {
+    "title": "Expériences Professionnelles",
+    "items": [
+      {
+        "role": "Stagiaire en Data Science",
+        "company": "Laboratoire CENOMEXA – Université de Caen Normandie",
+        "date": "2025 – 3 mois",
+        "tasks": [
+          "Développement d’un système de monitoring acoustique intelligent pour le bien-être animal",
+          "Pipeline de classification ResNet50 + SVM",
+          "Extraction d’embeddings et mélogrammes avec PyTorch & Librosa",
+          "Réduction de dimension PCA et étude d’ablation",
+          "Collaboration avec des chercheurs en éthologie"
+        ]
+      },
+      {
+        "role": "Assistant Data Analyst (Freelance)",
+        "company": "Big Market",
+        "date": "2024 – 3 mois",
+        "tasks": [
+          "Nettoyage et analyse de données de ventes",
+          "Création de tableaux de bord",
+          "Automatisation de rapports marketing"
+        ]
+      }
+    ]
   },
   "projects": [
   { "title": "Handball Tracking", "desc": "Détection et suivi des joueurs, du ballon et du terrain avec YOLO & ByteTrack.", "linkText": "Lien GitHub" },
@@ -16,12 +44,12 @@
     "download": "Télécharger mon CV"
   },
   "skills": {
-    "Langages de Programmation": ["Python", "Java", "C", "C++", "Prolog", "SQL"],
-    "Apprentissage Automatique & IA": ["PyTorch", "TensorFlow", "Scikit-learn", "Apprentissage par renforcement", "Graphes probabilistes", "Programmation par contraintes"],
-    "Vision par Ordinateur": ["YOLO", "OpenCV", "ByteTrack"],
-    "TAL": ["NLTK", "SpaCy", "FastText", "WordNet"],
-    "Bases de Données & ETL": ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Apache Hop", "Talend", "OLAP", "MDX"],
-    "Outils & Environnements": ["Docker", "Git", "Jupyter Notebook", "Linux", "Windows", "LaTeX", "UML", "Pack Office"]
+    "Langages de Programmation": ["Python", "Java", "C", "C++", "Prolog", "SQL", "HTML", "CSS", "JavaScript"],
+    "Apprentissage Automatique & IA": ["PyTorch", "PyTorch Lightning", "TensorFlow", "Keras", "Scikit-learn", "CNN", "GMM", "SVM", "Decision Trees", "Boosting", "Autoencoders", "GAN", "Diffusion Models", "Fine-tuning", "Hugging Face"],
+    "Vision par Ordinateur": ["YOLO", "OpenCV", "ByteTrack", "Keyopoint Detection", "Homography"],
+    "TAL": ["NLTK", "SpaCy", "FastText", "WordNet", "Transformers", "BERT", "GPT", "Embeddings", "Text classification", "Text preprocessing", "Sequence labeling"],
+    "Bases de Données & ETL": ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Apache Hop", "Talend open studio", "OLAP", "MDX", "Data cleaning", "ETL  pipelines"],
+    "Outils & Environnements": ["Docker", "Git", "Linux", "Jupyter Notebook", "LaTeX", "Google Colab", "UML", "Microsoft Office"]
   },
   "about": {
     "title": "À propos de moi",

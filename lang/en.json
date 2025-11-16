@@ -1,32 +1,65 @@
 {
   "home": {
     "title": "Eldis Ymeraj",
-    "desc": "Master’s student in Artificial Intelligence and Human Factors at the University of Caen Normandy. I am curious and motivated, always looking for new challenges to learn, grow and improve my skills."
+    "desc": "Master’s student in Artificial Intelligence. Passionate about Machine Learning, Data Science and complex data analysis."
   },
+
+  "experience": {
+    "title": "Professional Experience",
+    "items": [
+      {
+        "role": "Data Science Intern",
+        "company": "CENOMEXA Laboratory – University of Caen Normandy",
+        "date": "2025 – 3 months",
+        "tasks": [
+          "Developed an intelligent acoustic monitoring system",
+          "Built a ResNet50 + SVM classification pipeline",
+          "Generated mel-spectrograms and extracted embeddings",
+          "Performed PCA dimensionality reduction and ablation study",
+          "Collaborated with ethology researchers on vocalization analysis"
+        ]
+      },
+      {
+        "role": "Assistant Data Analyst (Freelance)",
+        "company": "Big Market",
+        "date": "2024 – 3 months",
+        "tasks": [
+          "Cleaned and analyzed sales datasets",
+          "Created dashboards (Power BI)",
+          "Automated weekly marketing reports"
+        ]
+      }
+    ]
+  },
+
   "projects": [
-  { "title": "Handball Tracking", "desc": "Detection & tracking of players, ball and field using YOLO & ByteTrack.", "linkText": "GitHub Link" },
-  { "title": "AI for Games", "desc": "Adversarial AI for Domino and Tic-Tac-Toe using MinMax & Expectimax.", "linkText": "GitHub Link" },
-  { "title": "GraphQL & Docker Visualization", "desc": "Interactive web app for data visualization with MongoDB & D3.js.", "linkText": "GitHub Link" },
-  { "title": "ETL & OLAP", "desc": "Data warehouse & OLAP cube built with Apache Hop.", "linkText": "GitHub Link" },
-  { "title": "Multi-Agent System (JADE)", "desc": "Implementation of a multi-agent system using the JADE library to simulate a production workshop.", "linkText": "GitHub Link" },
-  { "title": "NLP – Text Transformation with WordNet & FastText", "desc": "Automatic text rewriting using semantic relations (translation, hyponyms, antonyms) with WordNet and FastText.", "linkText": "GitHub Link" }
-],
+    { "title": "Handball Tracking", "desc": "Detection and tracking of players, ball and field using YOLO & ByteTrack.", "linkText": "GitHub Link" },
+    { "title": "AI for Games", "desc": "Adversarial AI for Domino & Tic-Tac-Toe using MinMax & opponent modeling.", "linkText": "GitHub Link" },
+    { "title": "GraphQL & Docker Visualization", "desc": "Interactive data visualization dashboard based on GraphQL, MongoDB and D3.js.", "linkText": "GitHub Link" },
+    { "title": "ETL & OLAP", "desc": "Data warehouse and OLAP cube built with Apache Hop.", "linkText": "GitHub Link" },
+    { "title": "Multi-Agent System", "desc": "Production workshop simulation using JADE agents.", "linkText": "GitHub Link" },
+    { "title": "NLP – WordNet & FastText", "desc": "Automatic text rewriting with semantic relations.", "linkText": "GitHub Link" }
+  ],
+
   "cv": {
     "title": "Curriculum Vitae",
     "download": "Download my CV"
   },
+
   "skills": {
-    "Programming Languages": ["Python", "Java", "C", "C++", "Prolog", "SQL"],
-    "Machine Learning & AI": ["PyTorch", "TensorFlow", "Scikit-learn", "Reinforcement Learning", "Probabilistic Graphical Models", "Constraint Programming"],
-    "Computer Vision": ["YOLO", "OpenCV", "ByteTrack"],
-    "NLP": ["NLTK", "SpaCy", "FastText", "WordNet"],
-    "Databases & ETL": ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Apache Hop", "Talend", "OLAP", "MDX"],
-    "Tools & Environments": ["Docker", "Git", "Jupyter Notebook", "Linux", "Windows", "LaTeX", "UML", "Office Pack"]
+    "Programming Languages": ["Python", "Java", "C", "C++", "Prolog", "SQL", "HTML", "CSS", "JavaScript"],
+    "Machine Learning & Deep Learning": ["PyTorch", "PyTorch Lightning", "TensorFlow", "Keras", "Scikit-learn", "CNN", "GMM", "SVM", "Decision Trees", "Boosting", "Autoencoders", "GAN", "Diffusion Models", "Fine-tuning", "Hugging Face"],
+    "Computer Vision": ["YOLO", "ByteTrack", "OpenCV", "Keyopoint Detection", "Homography"],
+    "Natural Language Processing": ["NLTK", "SpaCy", "FastText", "WordNet", "Transformers", "BERT", "GPT", "Embeddings", "Text classification", "Text preprocessing", "Sequence labeling"],
+    "Databases & ETL": ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Apache Hop", "Talend open studio", "OLAP", "MDX", "Data cleaning", "ETL  pipelines"],
+    "Tools & Environments": ["Docker", "Git", "Linux", "Jupyter Notebook", "LaTeX", "Google Colab", "UML", "Microsoft Office"]
   },
+
   "about": {
     "title": "About Me",
-    "text": "My name is Eldis Ymeraj and I am a Master's student in Artificial Intelligence and Human Factors at the University of Caen Normandy. My studies allow me to develop strong skills in artificial intelligence and data science, while also keeping an openness to human sciences such as psychology and neuroscience.\n\nI am open to different internship opportunities, especially in the fields of data, machine learning or applied artificial intelligence, whether in research, industry or technological innovation.\n\nOutside of my studies, I am passionate about sports and I regularly go to the gym. I also enjoy reading, especially scientific, historical and political books, which broaden my vision of the world. Finally, I love traveling and discovering new cultures, which keeps me curious and open-minded.\n\nI consider myself a motivated, curious and ambitious person, always ready to learn and take on new challenges."
+    "text": "I am currently pursuing a Master’s degree in Artificial Intelligence & Human Factors at the University of Caen. I work on several projects in computer vision, NLP and machine learning.\n\nI am particularly interested in applied AI, complex data analysis and end-to-end ML pipelines.\n\nOutside academics, I enjoy neuroscience, history, sports and traveling."
   },
+
   "contact": {
     "title": "Contact Me",
     "email": "eldisymeraj0@gmail.com",
