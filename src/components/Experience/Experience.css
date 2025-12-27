@@ -1,0 +1,17 @@
+.experience__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.experience__card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  background: var(--clr-bg-alt);
+}
+
+.experience__list {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.4rem;
+}

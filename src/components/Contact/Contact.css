@@ -1,0 +1,77 @@
+.contact {
+  flex-direction: column;
+}
+
+.section.contact {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 225px;
+  min-width: 500px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 1.5rem; /* Adjust title size */
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    min-width: auto; /* Allow inputs to take full width */
+  }
+
+  textarea {
+    min-height: 150px; /* Adjust textarea height for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section__title {
+    font-size: 1.25rem; /* Further adjust title size */
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+}

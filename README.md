@@ -1,13 +1,39 @@
-# Eldis Ymeraj — Portfolio
+# Personal Portfolio – Eldis Ymeraj
 
-Click here to see my portfolio: https://elymeraj.github.io/portfolio/
+This repository contains the source code of my personal portfolio website built with React.  
+It presents my academic background, projects, technical skills, and professional experience in Artificial Intelligence and Data Science.
 
+## Live Portfolio
 
+Click here to see my portfolio:  
+https://elymeraj.github.io/portfolio/
 
-## Run locally
-Use a simple HTTP server (important for `fetch()` of JSON):
+---
+
+## Run the project locally
+
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- npm
+
+### Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-python3 -m http.server 8000
-# then open http://localhost:8000
+npm install
 ```
+### Start the development server
+```bash
+npm start
+```
+Then open your browser at:
+http://localhost:3000
+
+### Build for production
+To create an optimized production build:
+```bash
+npm run build
+```
+The production files are generated in the build/ directory.
+
