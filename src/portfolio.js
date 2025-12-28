@@ -8,7 +8,7 @@ const about = {
   role: 'Master’s Student in Artificial Intelligence',
   description:
     "I am a Master’s student in Artificial Intelligence at the University of Caen Normandy, with a strong interest in Data Science, Machine Learning, and Natural Language Processing. Through academic projects and applied research work, I have developed solid experience in data analysis, modeling, and end-to-end AI pipelines. I am currently seeking a 4–6 month end-of-studies internship starting March 2026 in Data Science, AI, or NLP, where I can contribute to real-world projects and continue strengthening my technical skills.",
-  resume: '/YMERAJ_CV.pdf',
+  resume: 'https://elymeraj.github.io/portfolio/YMERAJ_CV.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
     github: 'https://github.com/elymeraj',
