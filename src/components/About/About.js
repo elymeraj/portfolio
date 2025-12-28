@@ -1,28 +1,31 @@
+import { useContext } from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import { about } from '../../portfolio'
+import { LanguageContext } from '../../contexts/language'
 import './About.css'
 
 const About = () => {
-  const { name, role, description, resume, social } = about
+  const { portfolio, language } = useContext(LanguageContext)
+  const { name, role, description, resume, social } = portfolio.about
 
   return (
     <div className='about center'>
       {name && (
         <h1>
-          Hi, I am <span className='about__name'>{name}</span>
+          {language === 'en' ? 'Hi, I am ' : 'Bonjour, je suis '}
+          <span className='about__name'>{name}</span>
         </h1>
       )}
 
-      {role && <h2 className='about__role'>A {role}</h2>}
+      {role && <h2 className='about__role'>{language === 'en' ? 'A ' : ''}{role}</h2>}
       
       <p className='about__desc'>{description && description}</p>
 
       <div className='about__contact center'>
         {resume && (
-          <a href={resume}>
+          <a href={resume} target="_blank" rel="noopener noreferrer">
             <span type='button' className='btn btn--outline'>
-              Check Out My Resume
+              {language === 'en' ? 'Check Out My Resume' : 'Voir mon CV'}
             </span>
           </a>
         )}

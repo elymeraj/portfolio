@@ -1,12 +1,16 @@
+import { useContext } from 'react'
+import { LanguageContext } from '../../contexts/language'
 import './Experience.css'
-import { experience } from '../../portfolio'
 
 const Experience = () => {
+  const { portfolio, language } = useContext(LanguageContext)
+  const { experience } = portfolio
+
   if (!experience || experience.length === 0) return null
 
   return (
     <section className='section experience' id='experience'>
-      <h2 className='section__title'>Experience</h2>
+      <h2 className='section__title'>{language === 'en' ? 'Experience' : 'Expérience'}</h2>
 
       <div className='experience__grid'>
         {experience.map((exp) => (
@@ -20,7 +24,7 @@ const Experience = () => {
 
             {exp.responsibilities?.length > 0 && (
               <>
-                <h4>Key responsibilities</h4>
+                <h4>{language === 'en' ? 'Key responsibilities' : 'Responsabilités clés'}</h4>
                 <ul className='experience__list'>
                   {exp.responsibilities.map((r) => (
                     <li key={`${exp.id}-${r}`}>{r}</li>

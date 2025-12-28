@@ -1,8 +1,11 @@
-import { header } from '../../portfolio'
+import { useContext } from 'react'
 import Navbar from '../Navbar/Navbar'
+import { LanguageContext } from '../../contexts/language'
 import './Header.css'
 
 const Header = () => {
+  const { portfolio } = useContext(LanguageContext)
+  const { header } = portfolio
   const { homepage, title } = header
 
   return (
