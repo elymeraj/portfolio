@@ -40,7 +40,7 @@ const Contact = () => {
       from_name: formData.userName,
       from_email: formData.userEmail,
       message: combinedMessage, 
-      to_name: 'Islem'          
+      to_name: 'Eldis'          
     };
 
     console.log('Template Params:', templateParams); // Log the parameters

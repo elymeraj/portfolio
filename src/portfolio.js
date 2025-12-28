@@ -114,8 +114,8 @@ const projects = [
     description:
       'A project that includes ETL (Extract, Transform, Load) processes using Talend and Mondrian OLAP Server, designed to create and manage OLAP cubes to facilitate data analysis and reporting.',
     stack: ['Apache Hop', 'SQLite', 'ETL', 'Mondrian OLAP Server'],
-    sourceCode: 'https://github.com/imessili/ETL_Talend_OLAP_CUBE',
-    livePreview: 'https://github.com/imessili/ETL_Talend_OLAP_CUBE',
+    sourceCode: 'https://github.com/elymeraj/DataWarehouse_ETL_OLAP',
+    livePreview: 'https://github.com/elymeraj/DataWarehouse_ETL_OLAP',
   },
   {
     name: 'Java Paint App & Shape Game Using MVC & Other Patterns',
