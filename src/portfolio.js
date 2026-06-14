@@ -59,7 +59,7 @@ const aboutEn = {
   name: 'Eldis Ymeraj',
   role: 'Master’s Student in Artificial Intelligence',
   description:
-    "I am a Master’s student in Artificial Intelligence at the University of Caen Normandy, currently completing an internship at Airbus on Explainable AI for Vision Landing Systems and runway analysis. My profile combines Computer Vision, Deep Learning, Data Science, and applied AI, with experience in object detection, visual data analysis, model interpretability, and end-to-end AI experimentation. I am currently looking for a full-time position in Computer Vision, Deep Learning, or AI/Data Science, where I can contribute to real-world industrial projects and continue developing robust, interpretable, and reliable AI systems.",
+    "I am a Master’s student in Artificial Intelligence at the University of Caen Normandy, currently completing an internship at Airbus on Explainable AI for Vision Landing Systems and runway analysis. My profile combines Computer Vision, Deep Learning, Data Science, and applied AI, with experience in object detection, visual data analysis, model interpretability, and end-to-end AI experimentation. I am currently looking for a full-time position in Computer Vision, Deep Learning, or AI/Data Science, where I can contribute to real-world industrial projects and continue developing robust, interpretable, and reliable AI systems.", resume: 'https://elymeraj.github.io/portfolio/CV_YMERAJ_EN.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
     github: 'https://github.com/elymeraj',
@@ -209,7 +209,7 @@ const aboutFr = {
   name: 'Eldis Ymeraj',
   role: 'Étudiant en Master Intelligence Artificielle',
   description:
-  "Je suis étudiant en Master Intelligence Artificielle à l’Université de Caen Normandie, actuellement en stage chez Airbus sur l’IA explicable appliquée aux Vision Landing Systems et à l’analyse de pistes. Mon profil combine Computer Vision, Deep Learning, Data Science et IA appliquée, avec une expérience en détection d’objets, analyse de données visuelles, interprétabilité des modèles et expérimentation IA de bout en bout. Je recherche actuellement un CDI en Computer Vision, Deep Learning ou IA/Data Science, afin de contribuer à des projets industriels concrets et au développement de systèmes d’IA robustes, interprétables et fiables.",  resume: 'https://elymeraj.github.io/portfolio/YMERAJ_CV.pdf',
+  "Je suis étudiant en Master Intelligence Artificielle à l’Université de Caen Normandie, actuellement en stage chez Airbus sur l’IA explicable appliquée aux Vision Landing Systems et à l’analyse de pistes. Mon profil combine Computer Vision, Deep Learning, Data Science et IA appliquée, avec une expérience en détection d’objets, analyse de données visuelles, interprétabilité des modèles et expérimentation IA de bout en bout. Je recherche actuellement un CDI en Computer Vision, Deep Learning ou IA/Data Science, afin de contribuer à des projets industriels concrets et au développement de systèmes d’IA robustes, interprétables et fiables.",  resume: 'https://elymeraj.github.io/portfolio/CV_YMERAJ_FR.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
     github: 'https://github.com/elymeraj',
