@@ -4,14 +4,50 @@ const header = {
 }
 
 const skills = [
-  'Python', 'Java', 'SQL', 'C', 'C++',
-  'Data Analysis', 'Data Cleaning', 'Data Preprocessing', 'Exploratory Data Analysis (EDA)', 'Feature Engineering', 'Statistical Analysis',
-  'Machine Learning', 'Supervised & Unsupervised Learning', 'Model Training & Evaluation', 'scikit-learn', 'Boosting (AdaBoost)', 'Clustering (K-Means, DBSCAN, Hierarchical)', 'Support Vector Machines (SVM)',
-  'Deep Learning', 'PyTorch', 'TensorFlow', 'Neural Networks', 'Transfer Learning',
-  'Natural Language Processing (NLP)', 'Text Preprocessing', 'Token Classification', 'BERT / CamemBERT', 'Embeddings', 'Hugging Face Transformers',
-  'Computer Vision', 'Object Detection', 'YOLO', 'Multi-Object Tracking', 'OpenCV',
-  'ETL Pipelines', 'Data Warehousing', 'Apache Hop', 'Talend', 'OLAP / MDX', 'SQLite', 'MongoDB',
-  'Git', 'Docker', 'Jupyter Notebook', 'Linux'
+  // Programming
+  'Python', 'Java', 'SQL', 'C', 'C++', 'JavaScript',
+
+  // Data Science & Analysis
+  'Data Analysis', 'Data Cleaning', 'Data Preprocessing',
+  'Exploratory Data Analysis (EDA)', 'Feature Engineering',
+  'Statistical Analysis', 'Pandas', 'NumPy', 'Matplotlib',
+
+  // Machine Learning
+  'Machine Learning', 'Supervised Learning', 'Unsupervised Learning',
+  'Model Training & Evaluation', 'scikit-learn',
+  'Support Vector Machines (SVM)', 'PCA', 'GMM',
+  'Boosting (AdaBoost)', 'Clustering (K-Means, DBSCAN, Hierarchical)',
+
+  // Deep Learning
+  'Deep Learning', 'PyTorch', 'TensorFlow', 'Keras',
+  'Neural Networks', 'CNN', 'Transfer Learning', 'Fine-tuning',
+
+  // Explainable AI
+  'Explainable AI (XAI)', 'Xplique',
+  'Concept-Based Explainability', 'Attribution Methods',
+  'Model Interpretability',
+
+  // Computer Vision
+  'Computer Vision', 'Image Processing', 'Object Detection',
+  'YOLO', 'Multi-Object Tracking', 'ByteTrack', 'OpenCV',
+  'Video Tracking',
+
+  // Natural Language Processing
+  'Natural Language Processing (NLP)', 'Text Preprocessing',
+  'Token Classification', 'BERT', 'CamemBERT',
+  'Embeddings', 'Hugging Face Transformers',
+
+  // Data Engineering
+  'ETL Pipelines', 'ELT Pipelines', 'Data Warehousing',
+  'Apache Hop', 'Talend', 'OLAP', 'MDX',
+  'SQLite', 'PostgreSQL', 'MongoDB', 'GraphQL',
+
+  // Cloud, DevOps & Tools
+  'AWS EC2', 'AWS S3', 'Docker', 'Git', 'GitHub',
+  'Linux', 'Jupyter Notebook', 'Google Colab', 'LaTeX',
+
+  // Data Visualization
+  'D3.js', 'Data Visualization'
 ]
 
 const contact = {
@@ -23,8 +59,7 @@ const aboutEn = {
   name: 'Eldis Ymeraj',
   role: 'Master’s Student in Artificial Intelligence',
   description:
-    "I am a Master’s student in Artificial Intelligence at the University of Caen Normandy, with a strong interest in Data Science, Machine Learning, and Natural Language Processing. Through academic projects and applied research work, I have developed solid experience in data analysis, modeling, and end-to-end AI pipelines. I am currently seeking a 4–6 month end-of-studies internship starting March 2026 in Data Science, AI, or NLP, where I can contribute to real-world projects and continue strengthening my technical skills.",
-  resume: 'https://elymeraj.github.io/portfolio/YMERAJ_CV.pdf',
+    "I am a Master’s student in Artificial Intelligence at the University of Caen Normandy, currently completing an internship at Airbus on Explainable AI for Vision Landing Systems and runway analysis. My profile combines Computer Vision, Deep Learning, Data Science, and applied AI, with experience in object detection, visual data analysis, model interpretability, and end-to-end AI experimentation. I am currently looking for a full-time position in Computer Vision, Deep Learning, or AI/Data Science, where I can contribute to real-world industrial projects and continue developing robust, interpretable, and reliable AI systems.",
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
     github: 'https://github.com/elymeraj',
@@ -132,6 +167,23 @@ const projectsEn = [
 
 const experienceEn = [
   {
+    id: 'airbus-xai-intern-2026',
+    title: 'Artificial Intelligence / Explainable AI Intern',
+    company: 'Airbus SAS',
+    period: 'March 2026 – September 2026 · Internship',
+    description:
+      'Contribution to the RELAI-VLS project, focused on Explainable AI for Vision Landing Systems and runway analysis. The work aims to better understand and analyze the decisions of Computer Vision models in an aeronautical context, with a focus on object detection, concept-based explanations, internal activations, and experimental evaluation.',
+    responsibilities: [
+      'Studied and adapted explainability methods to analyze the decisions of Computer Vision models applied to runway detection and analysis.',
+      'Designed experiments to extract, visualize, and compare concepts learned by object detection models.',
+      'Analyzed internal activations, reconstruction quality, and concept stability across datasets, model layers, and experimental parameters.',
+      'Worked with visual aeronautical datasets and model outputs to evaluate how learned concepts vary depending on data conditions and model configuration.',
+      'Used AWS resources to run experiments and manage datasets/results, including EC2 instances and S3 storage.',
+      'Produced visualizations and experimental summaries to support model interpretation and analysis.'
+    ],
+    stack: ['Python', 'PyTorch', 'YOLO', 'XAI', 'NumPy', 'Pandas', 'Matplotlib', 'AWS EC2', 'Bucket S3', 'Git']
+  },
+  {
     id: 'responsibio-rd-intern-2025',
     title: 'Data Science Intern',
     company: 'CENOMEXA – Responsibio Research Project',
@@ -157,8 +209,7 @@ const aboutFr = {
   name: 'Eldis Ymeraj',
   role: 'Étudiant en Master Intelligence Artificielle',
   description:
-    "Je suis étudiant en Master en Intelligence Artificielle à l’Université de Caen Normandie, avec un fort intérêt pour la Data Science, le Machine Learning et le Traitement Automatique du Langage Naturel. À travers des projets académiques et des travaux de recherche appliquée, j’ai développé une solide expérience en analyse de données, en modélisation et en conception de pipelines d’IA de bout en bout. Je suis actuellement à la recherche d’un stage de fin d’études de 4 à 6 mois à partir de mars 2026 en Data Science, IA ou NLP, où je pourrai contribuer à des projets concrets et continuer à renforcer mes compétences techniques.",
-  resume: 'https://elymeraj.github.io/portfolio/YMERAJ_CV.pdf',
+  "Je suis étudiant en Master Intelligence Artificielle à l’Université de Caen Normandie, actuellement en stage chez Airbus sur l’IA explicable appliquée aux Vision Landing Systems et à l’analyse de pistes. Mon profil combine Computer Vision, Deep Learning, Data Science et IA appliquée, avec une expérience en détection d’objets, analyse de données visuelles, interprétabilité des modèles et expérimentation IA de bout en bout. Je recherche actuellement un CDI en Computer Vision, Deep Learning ou IA/Data Science, afin de contribuer à des projets industriels concrets et au développement de systèmes d’IA robustes, interprétables et fiables.",  resume: 'https://elymeraj.github.io/portfolio/YMERAJ_CV.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
     github: 'https://github.com/elymeraj',
@@ -167,12 +218,12 @@ const aboutFr = {
 
 const projectsFr = [
   {
-    name: 'Classification de Mémoire Autobiographique (en cours)',
+    name: 'Classification de Mémoire Autobiographique',
     description:
       "Un projet de NLP orienté recherche qui consiste à affiner (fine-tuner) CamemBERT pour une classification au niveau des tokens de récits autobiographiques. Le modèle identifie, mot par mot, si un détail de mémoire est épisodique (spécifique à un événement) ou sémantique (connaissances générales), en utilisant un étiquetage BIO et des données annotées manuellement issues de protocoles neuropsychologiques.",
     stack: ['Python', 'PyTorch', 'CamemBERT', 'Hugging Face', 'NLP', 'BIO Tagging'],  
-    sourceCode: null,
-    livePreview: null
+    sourceCode: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
+    livePreview: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation'
   },
   {
     name: 'Solveur de Théorie des Jeux Coopératifs',
@@ -260,12 +311,29 @@ const projectsFr = [
 
 const experienceFr = [
   {
+    id: 'airbus-xai-intern-2026',
+    title: 'Stagiaire Intelligence Artificielle / IA Explicable',
+    company: 'Airbus SAS',
+    period: 'Mars 2026 – Septembre 2026 · Stage',
+    description:
+      "Contribution au projet RELAI-VLS, centré sur l’IA explicable appliquée aux Vision Landing Systems et à l’analyse de pistes. Le travail vise à mieux comprendre et analyser les décisions de modèles de Computer Vision dans un contexte aéronautique, avec un focus sur la détection d’objets, les explications par concepts, les activations internes et l’évaluation expérimentale.",
+    responsibilities: [
+      "Étude et adaptation de méthodes d’explicabilité pour analyser les décisions de modèles de Computer Vision appliqués à la détection et à l’analyse de pistes.",
+      "Conception d’expériences pour extraire, visualiser et comparer les concepts appris par des modèles de détection d’objets.",
+      "Analyse des activations internes, de la qualité de reconstruction et de la stabilité des concepts selon les jeux de données, les couches du modèle et les paramètres expérimentaux.",
+      "Exploitation de données visuelles aéronautiques et de sorties de modèles afin d’évaluer l’évolution des concepts appris selon les conditions de données et la configuration du modèle.",
+      "Utilisation de ressources AWS pour exécuter les expériences et gérer les jeux de données/résultats, notamment des instances EC2 et du stockage S3.",
+      "Production de visualisations et de synthèses expérimentales pour faciliter l’interprétation et l’analyse des modèles."
+    ],
+    stack: ['Python', 'PyTorch', 'YOLO', 'Xplique', 'NumPy', 'Pandas', 'Matplotlib', 'AWS EC2', 'S3', 'Git']
+  },
+  {
     id: 'responsibio-rd-intern-2025',
     title: 'Stagiaire Data Science',
     company: 'CENOMEXA – Projet Responsibio',
     period: '2025 · Stage de 3 mois',
     description:
-      "Conception et mise en œuvre d’un pipeline d’IA hybride de bout en bout pour l’évaluation non invasive des états émotionnels de rongeurs par analyse bioacoustique. Le projet combine le traitement du signal, l’apprentissage profond et le machine learning classique afin de gérer des données audio complexes et non structurées, et d’assurer une généralisation robuste dans des conditions de laboratoire.",
+      "Conception et mise en oeuvre d’un pipeline d’IA hybride de bout en bout pour l’évaluation non invasive des états émotionnels de rongeurs par analyse bioacoustique. Le projet combine le traitement du signal, l’apprentissage profond et le machine learning classique afin de gérer des données audio complexes et non structurées, et d’assurer une généralisation robuste dans des conditions de laboratoire.",
     responsibilities: [
       'Construction et constitution d’un jeu de données bioacoustiques propriétaire (vocalisations de souris et de rats), incluant le nettoyage et la normalisation des signaux audio bruts.',
       'Transformation des signaux audio temporels en représentations temps–fréquence via la génération de spectrogrammes de Mel (échelle en décibels) à l’aide de Librosa.',
