@@ -20,8 +20,8 @@ const AppContent = () => {
 
       <main>
         <About />
+        <Experience/>
         <Projects />
-        <Experience />
         <Skills />
         <Contact />
       </main>
