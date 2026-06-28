@@ -37,3 +37,7 @@ npm run build
 ```
 The production files are generated in the build/ directory.
 
+Or this command;
+```bash
+npm run deploy
+```
