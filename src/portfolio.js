@@ -10,9 +10,9 @@ const contact = {
 // --- ENGLISH DATA ---
 const aboutEn = {
   name: 'Eldis Ymeraj',
-  role: 'Junior Artificial Intelligence Engineer',
+  role: 'Junior Data Scientist',
   description:
-    'Artificial Intelligence Engineer with a Master’s degree in AI and a strong interest in Computer Vision, Natural Language Processing, and Data Science. I am currently completing an internship at Airbus, where I work on the explainability of computer vision models used in Vision Landing Systems, with a focus on runway detection and concept-based interpretation. I am seeking a permanent or fixed-term position where I can contribute to practical AI projects and help build robust, reliable, and interpretable systems.',
+    'Data Scientist specialized in Artificial Intelligence, with a particular interest in Computer Vision and Natural Language Processing. I am currently completing my final-year internship at Airbus, where I work on the explainability of computer vision models for vision-based landing assistance systems. I am seeking a permanent or fixed-term position to contribute to practical AI projects and help develop robust, reliable, and interpretable solutions.',
   resume: `${process.env.PUBLIC_URL}/CV_YMERAJ_EN.pdf`,
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
@@ -139,7 +139,7 @@ const experienceEn = [
     id: 'responsibio-rd-intern-2025',
     title: 'Data Science Intern',
     company: 'CENOMEXA – Responsibio',
-    period: 'June 2025 – August 2025 · Internship',
+    period: 'May 2025 – August 2025 · Internship',
     description:
       'Development of an automated classification system for mouse and rat vocalizations used in animal bio-monitoring. The project combined audio processing, deep feature extraction, dimensionality reduction, and classical machine learning.',
     responsibilities: [
@@ -194,9 +194,9 @@ const skillsEn = [
 // --- FRENCH DATA ---
 const aboutFr = {
   name: 'Eldis Ymeraj',
-  role: 'Ingénieur junior en Intelligence Artificielle',
+  role: 'Data Scientist junior',
   description:
-    "Ingénieur en Intelligence Artificielle, diplômé d’un Master en IA, avec un intérêt particulier pour la Computer Vision, le traitement automatique du langage et la Data Science. Actuellement en stage chez Airbus, je travaille sur l’explicabilité de modèles de vision utilisés dans les systèmes visuels d’aide à l’atterrissage, notamment pour la détection de pistes et l’interprétation par concepts. Je recherche un CDI ou un CDD afin de contribuer à des projets d’IA concrets et de développer des systèmes robustes, fiables et interprétables.",
+    "Data scientist spécialisé en intelligence artificielle, avec un intérêt particulier pour la vision par ordinateur et le traitement automatique du langage. Actuellement en stage de fin d’études chez Airbus, je travaille sur l’explicabilité de modèles de vision appliqués aux systèmes visuels d’aide à l’atterrissage. Je recherche un CDI ou un CDD afin de contribuer à des projets d’IA concrets et de développer des solutions robustes, fiables et interprétables.",
   resume: `${process.env.PUBLIC_URL}/CV_YMERAJ_FR.pdf`,
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
@@ -323,7 +323,7 @@ const experienceFr = [
     id: 'responsibio-rd-intern-2025',
     title: 'Stagiaire Data Science',
     company: 'CENOMEXA – Responsibio',
-    period: 'Juin 2025 – Août 2025 · Stage',
+    period: 'Mai 2025 – Août 2025 · Stage',
     description:
       "Développement d’un système de classification automatique des vocalisations de souris et de rats pour la bio-surveillance animale. Le projet combine traitement audio, extraction de caractéristiques profondes, réduction dimensionnelle et Machine Learning classique.",
     responsibilities: [
