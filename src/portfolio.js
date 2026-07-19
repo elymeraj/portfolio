@@ -10,9 +10,9 @@ const contact = {
 // --- ENGLISH DATA ---
 const aboutEn = {
   name: 'Eldis Ymeraj',
-  role: 'Junior Data Scientist',
+  role: 'AI & Machine Learning Engineer',
   description:
-    'Data Scientist specialized in Artificial Intelligence, with a particular interest in Computer Vision and Natural Language Processing. I am currently completing my final-year internship at Airbus, where I work on the explainability of computer vision models for vision-based landing assistance systems. I am seeking a permanent or fixed-term position to contribute to practical AI projects and help develop robust, reliable, and interpretable solutions.',
+    'Artificial Intelligence Engineer specializing in Machine Learning and Deep Learning, with hands-on experience in computer vision, natural language processing, and model evaluation. I am currently completing my final-year internship at Airbus, where I work on the explainability and reliability of detection models for vision-based landing assistance systems. I aim to contribute to useful, robust AI solutions that can be integrated into demanding technical environments.',
   resume: `${process.env.PUBLIC_URL}/CV_YMERAJ_EN.pdf`,
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
@@ -154,49 +154,41 @@ const experienceEn = [
 
 const skillsEn = [
   {
-    category: 'Programming Languages',
-    items: ['Python', 'Java', 'C', 'C++', 'SQL', 'JavaScript'],
+    category: 'Programming and Data Analysis',
+    items: ['Python', 'SQL', 'NumPy', 'Pandas', 'Java', 'C/C++', 'JavaScript'],
   },
   {
-    category: 'Machine Learning',
-    items: ['scikit-learn', 'SVM', 'PCA', 'Clustering', 'GMM', 'Boosting'],
-  },
-  {
-    category: 'Deep Learning',
-    items: ['PyTorch', 'TensorFlow', 'Keras', 'CNN', 'Transfer Learning', 'Fine-tuning'],
+    category: 'Machine Learning and Deep Learning',
+    items: ['scikit-learn', 'PyTorch', 'TensorFlow/Keras', 'SVM', 'Clustering', 'Boosting', 'CNN', 'Transfer Learning', 'Fine-tuning', 'Model Evaluation'],
   },
   {
     category: 'Computer Vision',
-    items: ['OpenCV', 'YOLO', 'ByteTrack', 'Object Detection', 'Image Processing', 'Video Tracking'],
-  },
-  {
-    category: 'Explainable AI',
-    items: ['Xplique', 'CRAFT', 'Concept-Based Explanations', 'Attribution Methods'],
+    items: ['OpenCV', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'ByteTrack', 'Object Detection', 'Image Processing', 'Video Tracking'],
   },
   {
     category: 'Natural Language Processing',
-    items: ['Transformers', 'CamemBERT', 'BERT', 'Hugging Face', 'Token Classification'],
+    items: ['Hugging Face Transformers', 'BERT', 'CamemBERT', 'spaCy', 'NLTK', 'Token Classification', 'Embeddings'],
   },
   {
-    category: 'Data and Databases',
-    items: ['Pandas', 'NumPy', 'MongoDB', 'PostgreSQL', 'SQLite', 'ETL', 'OLAP'],
+    category: 'Trustworthy AI',
+    items: ['Explainable AI (XAI)', 'Xplique', 'CRAFT / Holistic CRAFT', 'Concept-Based Explanations', 'Attribution Methods', 'Fidelity and Robustness Evaluation'],
   },
   {
-    category: 'Cloud and Tools',
-    items: ['AWS EC2', 'Amazon S3', 'Docker', 'Git', 'Linux', 'Jupyter', 'Google Colab', 'LaTeX'],
+    category: 'Data Engineering and Databases',
+    items: ['ETL', 'Apache Hop', 'Talend', 'OLAP', 'PostgreSQL', 'MySQL', 'MongoDB', 'SQLite'],
   },
   {
-    category: 'Web and Visualization',
-    items: ['Node.js', 'GraphQL', 'D3.js', 'React', 'Matplotlib'],
+    category: 'APIs, Cloud and Engineering Tools',
+    items: ['FastAPI', 'GraphQL', 'Docker', 'AWS EC2', 'Amazon S3', 'Git/GitHub', 'Linux', 'Jupyter', 'Matplotlib', 'D3.js'],
   },
 ]
 
 // --- FRENCH DATA ---
 const aboutFr = {
   name: 'Eldis Ymeraj',
-  role: 'Data Scientist junior',
+  role: 'Ingénieur IA & Machine Learning',
   description:
-    "Data scientist spécialisé en intelligence artificielle, avec un intérêt particulier pour la vision par ordinateur et le traitement automatique du langage. Actuellement en stage de fin d’études chez Airbus, je travaille sur l’explicabilité de modèles de vision appliqués aux systèmes visuels d’aide à l’atterrissage. Je recherche un CDI ou un CDD afin de contribuer à des projets d’IA concrets et de développer des solutions robustes, fiables et interprétables.",
+    "Ingénieur en intelligence artificielle spécialisé en Machine Learning et Deep Learning, avec une expérience en vision par ordinateur, traitement automatique du langage et évaluation de modèles. Actuellement en stage de fin d’études chez Airbus, je travaille sur l’explicabilité et la fiabilité de modèles de détection appliqués aux systèmes visuels d’aide à l’atterrissage. Je souhaite contribuer à la conception de solutions d’IA utiles, robustes et intégrables dans des environnements techniques exigeants.",
   resume: `${process.env.PUBLIC_URL}/CV_YMERAJ_FR.pdf`,
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
@@ -338,40 +330,32 @@ const experienceFr = [
 
 const skillsFr = [
   {
-    category: 'Langages de programmation',
-    items: ['Python', 'Java', 'C', 'C++', 'SQL', 'JavaScript'],
+    category: 'Programmation et analyse de données',
+    items: ['Python', 'SQL', 'NumPy', 'Pandas', 'Java', 'C/C++', 'JavaScript'],
   },
   {
-    category: 'Machine Learning',
-    items: ['scikit-learn', 'SVM', 'PCA', 'Clustering', 'GMM', 'Boosting'],
+    category: 'Machine Learning et Deep Learning',
+    items: ['scikit-learn', 'PyTorch', 'TensorFlow/Keras', 'SVM', 'Clustering', 'Boosting', 'CNN', 'Transfer Learning', 'Fine-tuning', 'Évaluation de modèles'],
   },
   {
-    category: 'Deep Learning',
-    items: ['PyTorch', 'TensorFlow', 'Keras', 'CNN', 'Transfer Learning', 'Fine-tuning'],
-  },
-  {
-    category: 'Computer Vision',
-    items: ['OpenCV', 'YOLO', 'ByteTrack', 'Détection d’objets', 'Traitement d’images', 'Suivi vidéo'],
-  },
-  {
-    category: 'IA explicable',
-    items: ['Xplique', 'CRAFT', 'Explications par concepts', 'Méthodes d’attribution'],
+    category: 'Vision par ordinateur',
+    items: ['OpenCV', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'ByteTrack', 'Détection d’objets', 'Traitement d’images', 'Suivi vidéo'],
   },
   {
     category: 'Traitement automatique du langage',
-    items: ['Transformers', 'CamemBERT', 'BERT', 'Hugging Face', 'Classification de tokens'],
+    items: ['Hugging Face Transformers', 'BERT', 'CamemBERT', 'spaCy', 'NLTK', 'Classification de tokens', 'Embeddings'],
   },
   {
-    category: 'Data et bases de données',
-    items: ['Pandas', 'NumPy', 'MongoDB', 'PostgreSQL', 'SQLite', 'ETL', 'OLAP'],
+    category: 'IA de confiance',
+    items: ['IA explicable (XAI)', 'Xplique', 'CRAFT / Holistic CRAFT', 'Explications par concepts', 'Méthodes d’attribution', 'Évaluation de la fidélité et de la robustesse'],
   },
   {
-    category: 'Cloud et outils',
-    items: ['AWS EC2', 'Amazon S3', 'Docker', 'Git', 'Linux', 'Jupyter', 'Google Colab', 'LaTeX'],
+    category: 'Data Engineering et bases de données',
+    items: ['ETL', 'Apache Hop', 'Talend', 'OLAP', 'PostgreSQL', 'MySQL', 'MongoDB', 'SQLite'],
   },
   {
-    category: 'Web et visualisation',
-    items: ['Node.js', 'GraphQL', 'D3.js', 'React', 'Matplotlib'],
+    category: 'API, Cloud et outils d’ingénierie',
+    items: ['FastAPI', 'GraphQL', 'Docker', 'AWS EC2', 'Amazon S3', 'Git/GitHub', 'Linux', 'Jupyter', 'Matplotlib', 'D3.js'],
   },
 ]
 

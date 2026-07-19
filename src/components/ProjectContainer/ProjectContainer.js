@@ -28,7 +28,7 @@ const ProjectContainer = ({ project }) => (
       </a>
     )}
 
-    {project.livePreview && (
+    {project.livePreview && project.livePreview !== project.sourceCode && (
       <a
         href={project.livePreview}
         aria-label='live preview'
