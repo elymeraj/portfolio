@@ -126,14 +126,14 @@ const experienceEn = [
     company: 'Airbus SAS',
     period: 'March 2026 – September 2026 · Internship',
     description:
-      'Contribution to the RELAI-VLS project, focused on explaining runway detection models used in Vision Landing Systems. The work challenges and adapts concept-based explainability methods to understand what the models learn and whether the resulting explanations remain faithful under different experimental settings.',
+      "Contribution to research on Vision-Based Landing (VBL) systems, with the long-term goal of supporting the future certification of critical AI models. The objective is to study concept-based explainability methods in order to better understand the models' internal representations and explain concretely why the AI makes the decision to identify an object as a runway.",
     responsibilities: [
-      'Adapted CRAFT, a concept-based explainability method, to YOLO pose models in order to identify and visualize learned concepts.',
-      'Built experiments to extract internal activations, reconstruct latent representations, and compare original and reconstructed predictions.',
-      'Evaluated explanation fidelity and robustness across model layers, datasets, concept-bank sizes, and training sample sizes.',
-      'Ran experiments on AWS EC2, managed datasets and results with Amazon S3, and produced visual analyses for model interpretation.',
+      "Applied a concept-based explainability method to object detection models (YOLO-NAS Pose) to identify and analyze learned visual representations.",
+      "Set up experiments to extract internal activations, reconstruct latent representations, and verify the fidelity of the reconstructed predictions.",
+      "Evaluated the stability, importance, and localization of concepts across different experimental settings.",
+      "Ran experiments on AWS EC2, managed datasets and results with Amazon S3, and produced visual analyses for model interpretation.",
     ],
-    stack: ['Python', 'PyTorch', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'Xplique', 'CRAFT', 'NumPy', 'Pandas', 'Matplotlib', 'AWS EC2', 'Amazon S3', 'Git'],
+    stack: ['Python', 'PyTorch', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'Xplique', 'Holistic CRAFT', 'NumPy', 'Pandas', 'Matplotlib', 'AWS EC2', 'Amazon S3', 'Git'],
   },
   {
     id: 'responsibio-rd-intern-2025',
@@ -302,14 +302,14 @@ const experienceFr = [
     company: 'Airbus SAS',
     period: 'Mars 2026 – Septembre 2026 · Stage',
     description:
-      "Contribution au projet RELAI-VLS, consacré à l’explicabilité de modèles de détection de pistes utilisés dans les systèmes visuels d’aide à l’atterrissage. Le travail consiste à mettre à l’épreuve et à adapter des méthodes d’explicabilité fondées sur les concepts afin de comprendre ce que les modèles apprennent et de vérifier la fidélité des explications selon différents paramètres expérimentaux.",
+      "Contribution aux travaux de recherche sur les systèmes d'atterrissage basés sur la vision (Vision-Based Landing), avec pour objectif à long terme d'accompagner la certification des modèles d'IA critiques. L'étude porte sur des méthodes d'explicabilité basées sur les concepts afin de mieux comprendre les représentations internes des modèles et d'expliquer concrètement pourquoi l'IA prend la décision d'identifier un objet comme étant une piste.",
     responsibilities: [
-      "Adaptation de CRAFT, une méthode d’explicabilité fondée sur les concepts, à des modèles YOLO Pose afin d’identifier et de visualiser les concepts appris.",
-      "Mise en place d’expériences pour extraire les activations internes, reconstruire les représentations latentes et comparer les prédictions originales et reconstruites.",
-      "Évaluation de la fidélité et de la robustesse des explications selon les couches du modèle, les jeux de données, la taille de la banque de concepts et le nombre d’images d’apprentissage.",
-      "Exécution des expériences sur AWS EC2, gestion des données et résultats avec Amazon S3, et production de visualisations pour l’interprétation des modèles.",
+      "Application d'une méthode d'explicabilité basée sur les concepts à des modèles de détection d'objets (YOLO-NAS Pose) afin d'identifier et d'analyser les représentations visuelles apprises.",
+      "Mise en place d'expériences pour extraire les activations internes, reconstruire les représentations latentes et vérifier la fidélité des prédictions reconstruites.",
+      "Évaluation de la stabilité, de l'importance et de la localisation des concepts selon différents paramètres expérimentaux.",
+      "Exécution des expériences sur AWS EC2, gestion des données et résultats avec Amazon S3, et production de visualisations pour l'interprétation des modèles.",
     ],
-    stack: ['Python', 'PyTorch', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'Xplique', 'CRAFT', 'NumPy', 'Pandas', 'Matplotlib', 'AWS EC2', 'Amazon S3', 'Git'],
+    stack: ['Python', 'PyTorch', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'Xplique', 'Holistic CRAFT', 'NumPy', 'Pandas', 'Matplotlib', 'AWS EC2', 'Amazon S3', 'Git'],
   },
   {
     id: 'responsibio-rd-intern-2025',
