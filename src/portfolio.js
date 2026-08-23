@@ -12,7 +12,7 @@ const aboutEn = {
   name: 'Eldis Ymeraj',
   role: 'AI & Machine Learning Engineer',
   description:
-    'Artificial Intelligence Engineer specializing in Machine Learning and Deep Learning, with hands-on experience in computer vision, natural language processing, and model evaluation. I am currently completing my final-year internship at Airbus, where I work on the explainability and reliability of detection models for vision-based landing assistance systems. I aim to contribute to useful, robust AI solutions that can be integrated into demanding technical environments.',
+    'AI & Machine Learning Engineer with hands-on experience in developing, evaluating, and analyzing machine learning and deep learning models. Currently working at Airbus on Explainable AI for computer vision, with additional experience in NLP, data science, and applied machine learning.',
   resume: `${process.env.PUBLIC_URL}/CV_YMERAJ_EN.pdf`,
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
@@ -22,20 +22,20 @@ const aboutEn = {
 
 const projectsEn = [
   {
-    name: 'Automatic Annotation of Clinical Narratives',
+    name: 'Handball Video Detection and Tracking',
     description:
-      'An NLP project for token-level annotation of autobiographical narratives from clinical protocols. The pipeline prepares the corpus, applies BIO labels, fine-tunes CamemBERT, and classifies each token as episodic or semantic. Evaluation is performed with a strict patient-level split to prevent data leakage and provide a reliable estimate of generalization.',
-    stack: ['Python', 'PyTorch', 'Transformers', 'CamemBERT', 'Hugging Face', 'Pandas'],
-    sourceCode: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
-    livePreview: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
-  },
-  {
-    name: 'Handball Player and Ball Tracking',
-    description:
-      'A computer vision project covering the full workflow from dataset creation and annotation to the training of specialized YOLOv8 models for players, goalkeepers, referees, the ball, and court keypoints. The tracking pipeline uses ByteTrack for players, filtering and interpolation for the ball, and homography to project detected positions onto a two-dimensional handball court.',
-    stack: ['Python', 'YOLOv8', 'OpenCV', 'ByteTrack', 'Kalman Filter', 'Homography'],
+      'A computer vision project covering the workflow from dataset creation and annotation to the training of specialized YOLOv8 models for players, goalkeepers, referees, the ball, and court keypoints. The video tracking pipeline combines ByteTrack, ball filtering and interpolation, and homography-based projection of positions onto a two-dimensional handball court.',
+    stack: ['Python', 'PyTorch', 'YOLOv8', 'OpenCV', 'ByteTrack', 'Homography'],
     sourceCode: 'https://github.com/elymeraj/Handball_Tracking',
     livePreview: 'https://github.com/elymeraj/Handball_Tracking',
+  },
+  {
+    name: 'Automatic Annotation of Clinical Narratives',
+    description:
+      'An NLP system for automatically identifying episodic and semantic memory spans at token level in French clinical narratives. CamemBERT, ModernCamemBERT, and DeBERTa are fine-tuned and compared using patient-level cross-validation to evaluate generalization while preventing data leakage.',
+    stack: ['Python', 'PyTorch', 'Hugging Face Transformers', 'CamemBERT', 'Pandas'],
+    sourceCode: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
+    livePreview: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
   },
   {
     name: 'Interactive Sales Data Visualization',
@@ -122,64 +122,117 @@ const projectsEn = [
 const experienceEn = [
   {
     id: 'airbus-xai-intern-2026',
-    title: 'Artificial Intelligence / Explainable AI Intern',
+    title: 'Artificial Intelligence Intern -- Trustworthy AI',
     company: 'Airbus SAS',
     period: 'March 2026 – September 2026 · Internship',
     description:
-      "Contribution to research on Vision-Based Landing (VBL) systems, with the long-term goal of supporting the future certification of critical AI models. The objective is to study concept-based explainability methods in order to better understand the models' internal representations and explain concretely why the AI makes the decision to identify an object as a runway.",
+      'Work on Explainable AI for a computer vision model used for runway detection in a vision-based landing context.',
     responsibilities: [
-      "Applied a concept-based explainability method to object detection models (YOLO-NAS Pose) to identify and analyze learned visual representations.",
-      "Set up experiments to extract internal activations, reconstruct latent representations, and verify the fidelity of the reconstructed predictions.",
-      "Evaluated the stability, importance, and localization of concepts across different experimental settings.",
-      "Ran experiments on AWS EC2, managed datasets and results with Amazon S3, and produced visual analyses for model interpretation.",
+      'Adapted an Explainable AI method to a multi-scale YOLO-NAS Pose model using PyTorch to identify the visual features influencing model detections.',
+      'Developed an experimental protocol to extract, select, and analyze visual representations, assessing their quality, stability, and ability to preserve information relevant to detections.',
+      'Quantitatively evaluated detection fidelity using detection and spatial matching metrics, achieving 90.5% precision and a PR-AUC of 0.776.',
+      'Analyzed model behavior across different runway distances to identify the most influential visual information and study how it evolves throughout the approach.',
     ],
-    stack: ['Python', 'PyTorch', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'Xplique', 'Holistic CRAFT', 'NumPy', 'Pandas', 'Matplotlib', 'AWS EC2', 'Amazon S3', 'Git'],
+    stack: [
+      'Python',
+      'PyTorch',
+      'YOLO-NAS Pose',
+      'Xplique',
+      'Holistic CRAFT',
+      'NumPy',
+      'Pandas',
+      'Matplotlib',
+      'AWS EC2',
+      'Amazon S3',
+      'Git',
+    ],
   },
   {
     id: 'responsibio-rd-intern-2025',
-    title: 'Data Science Intern',
-    company: 'CENOMEXA – Responsibio',
+    title: 'Data Scientist Intern',
+    company: 'Responsibio',
     period: 'May 2025 – August 2025 · Internship',
     description:
-      'Development of an automated classification system for mouse and rat vocalizations used in animal bio-monitoring. The project combined audio processing, deep feature extraction, dimensionality reduction, and classical machine learning.',
+      'Data science work on mouse vocalization analysis for animal welfare classification.',
     responsibilities: [
-      'Prepared bio-acoustic recordings and transformed audio signals into Mel-spectrogram representations.',
-      'Extracted 2,048-dimensional features with a pre-trained ResNet50 model and reduced them to 58 principal components while preserving 86% of the variance.',
-      'Trained and evaluated SVM classifiers with stratified cross-validation and class balancing.',
-      'Achieved approximately 80% classification accuracy and assessed robustness to noise and cross-species domain shift.',
+      'Collected and prepared mouse vocalization recordings and associated metadata to build a dataset for animal welfare classification.',
+      'Developed an audio classification pipeline using mel-spectrograms, feature extraction, PCA dimensionality reduction, and a linear SVM classifier.',
+      'Evaluated the model using 5-fold cross-validation, reducing 2048 features to 58 while retaining 86% of the variance and achieving approximately 79% correct predictions.',
     ],
-    stack: ['Python', 'PyTorch', 'ResNet50', 'Librosa', 'scikit-learn', 'NumPy', 'Pandas', 'PCA', 'SVM'],
+    stack: [
+      'Python',
+      'scikit-learn',
+      'NumPy',
+      'Pandas',
+      'PCA',
+      'SVM',
+    ],
   },
 ]
 
 const skillsEn = [
   {
-    category: 'Programming and Data Analysis',
-    items: ['Python', 'SQL', 'NumPy', 'Pandas', 'Java', 'C/C++', 'JavaScript'],
+    category: 'Programming Languages',
+    items: ['Python', 'Java', 'C', 'C++'],
   },
   {
-    category: 'Machine Learning and Deep Learning',
-    items: ['scikit-learn', 'PyTorch', 'TensorFlow/Keras', 'SVM', 'Clustering', 'Boosting', 'CNN', 'Transfer Learning', 'Fine-tuning', 'Model Evaluation'],
+    category: 'Machine Learning & Computer Vision',
+    items: [
+      'Object Detection',
+      'Pose Estimation',
+      'YOLO',
+      'Explainable AI (XAI)',
+      'PCA',
+      'NMF',
+    ],
   },
   {
-    category: 'Computer Vision',
-    items: ['OpenCV', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'ByteTrack', 'Object Detection', 'Image Processing', 'Video Tracking'],
+    category: 'Frameworks & Libraries',
+    items: [
+      'PyTorch',
+      'TensorFlow',
+      'scikit-learn',
+      'OpenCV',
+      'NumPy',
+      'Pandas',
+    ],
   },
   {
-    category: 'Natural Language Processing',
-    items: ['Hugging Face Transformers', 'BERT', 'CamemBERT', 'spaCy', 'NLTK', 'Token Classification', 'Embeddings'],
+    category: 'NLP & Generative AI',
+    items: [
+      'RAG',
+      'Transformers',
+      'Hugging Face',
+      'CamemBERT',
+      'Embeddings',
+    ],
   },
   {
-    category: 'Trustworthy AI',
-    items: ['Explainable AI (XAI)', 'Xplique', 'CRAFT / Holistic CRAFT', 'Concept-Based Explanations', 'Attribution Methods', 'Fidelity and Robustness Evaluation'],
+    category: 'Data Engineering & Cloud',
+    items: [
+      'AWS (EC2, S3)',
+      'SQL',
+      'PostgreSQL',
+      'MongoDB',
+      'Apache Hop',
+      'Data Visualization (Matplotlib, Plotly)',
+    ],
   },
   {
-    category: 'Data Engineering and Databases',
-    items: ['ETL', 'Apache Hop', 'Talend', 'OLAP', 'PostgreSQL', 'MySQL', 'MongoDB', 'SQLite'],
+    category: 'Development Tools',
+    items: [
+      'Git',
+      'GitHub',
+      'Linux',
+      'Conda',
+      'Jupyter Notebook',
+      'Google Colab',
+      'VS Code',
+    ],
   },
   {
-    category: 'APIs, Cloud and Engineering Tools',
-    items: ['FastAPI', 'GraphQL', 'Docker', 'AWS EC2', 'Amazon S3', 'Git/GitHub', 'Linux', 'Jupyter', 'Matplotlib', 'D3.js'],
+    category: 'Web Technologies',
+    items: ['HTML', 'CSS', 'JavaScript'],
   },
 ]
 
@@ -188,7 +241,7 @@ const aboutFr = {
   name: 'Eldis Ymeraj',
   role: 'Ingénieur IA & Machine Learning',
   description:
-    "Ingénieur en intelligence artificielle spécialisé en Machine Learning et Deep Learning, avec une expérience en vision par ordinateur, traitement automatique du langage et évaluation de modèles. Actuellement en stage de fin d’études chez Airbus, je travaille sur l’explicabilité et la fiabilité de modèles de détection appliqués aux systèmes visuels d’aide à l’atterrissage. Je souhaite contribuer à la conception de solutions d’IA utiles, robustes et intégrables dans des environnements techniques exigeants.",
+    "Ingénieur en Intelligence Artificielle et Machine Learning, avec une expérience pratique dans le développement, l'évaluation et l'analyse de modèles de machine learning et de deep learning. Je travaille actuellement chez Airbus sur l'IA explicable appliquée à la vision par ordinateur, avec également une expérience en NLP, data science et machine learning appliqué.",
   resume: `${process.env.PUBLIC_URL}/CV_YMERAJ_FR.pdf`,
   social: {
     linkedin: 'https://www.linkedin.com/in/eldis-ymeraj-2b5433226',
@@ -198,20 +251,20 @@ const aboutFr = {
 
 const projectsFr = [
   {
-    name: 'Annotation automatique de récits cliniques',
+    name: 'Détection et suivi vidéo en handball',
     description:
-      "Un projet de TAL consacré à l’annotation, au niveau des tokens, de récits autobiographiques issus de protocoles cliniques. Le pipeline prépare le corpus, applique un étiquetage BIO, affine CamemBERT et classe chaque token comme épisodique ou sémantique. L’évaluation repose sur une séparation stricte des patients afin d’éviter les fuites de données et d’estimer correctement la généralisation.",
-    stack: ['Python', 'PyTorch', 'Transformers', 'CamemBERT', 'Hugging Face', 'Pandas'],
-    sourceCode: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
-    livePreview: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
-  },
-  {
-    name: 'Suivi des joueurs et du ballon en handball',
-    description:
-      "Un projet de Computer Vision couvrant l’ensemble du processus, de la création et de l’annotation des jeux de données jusqu’à l’entraînement de modèles YOLOv8 spécialisés pour les joueurs, gardiens, arbitres, le ballon et les points clés du terrain. Le pipeline utilise ByteTrack pour les joueurs, du filtrage et de l’interpolation pour le ballon, puis une homographie pour projeter les positions sur un terrain de handball en deux dimensions.",
-    stack: ['Python', 'YOLOv8', 'OpenCV', 'ByteTrack', 'Filtre de Kalman', 'Homographie'],
+      "Un projet de vision par ordinateur couvrant le processus de la création et de l'annotation des jeux de données jusqu'à l'entraînement de modèles YOLOv8 spécialisés pour les joueurs, gardiens, arbitres, le ballon et les points clés du terrain. Le pipeline de suivi vidéo combine ByteTrack, le filtrage et l'interpolation du ballon, ainsi qu'une homographie pour projeter les positions sur un terrain de handball en deux dimensions.",
+    stack: ['Python', 'PyTorch', 'YOLOv8', 'OpenCV', 'ByteTrack', 'Homographie'],
     sourceCode: 'https://github.com/elymeraj/Handball_Tracking',
     livePreview: 'https://github.com/elymeraj/Handball_Tracking',
+  },
+  {
+    name: 'Annotation automatique de récits cliniques',
+    description:
+      "Un système NLP permettant d'identifier automatiquement, mot par mot, les passages de mémoire épisodique et sémantique dans des récits cliniques en français. CamemBERT, ModernCamemBERT et DeBERTa sont fine-tunés et comparés avec une validation croisée par patient afin d'évaluer la généralisation sans fuite de données.",
+    stack: ['Python', 'PyTorch', 'Hugging Face Transformers', 'CamemBERT', 'Pandas'],
+    sourceCode: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
+    livePreview: 'https://github.com/elymeraj/Episodic-Semantic-Memory-Annotation',
   },
   {
     name: 'Visualisation interactive de données de ventes',
@@ -298,64 +351,117 @@ const projectsFr = [
 const experienceFr = [
   {
     id: 'airbus-xai-intern-2026',
-    title: 'Stagiaire en Intelligence Artificielle / IA explicable',
+    title: 'Stagiaire en Intelligence Artificielle -- IA de confiance',
     company: 'Airbus SAS',
     period: 'Mars 2026 – Septembre 2026 · Stage',
     description:
-      "Contribution aux travaux de recherche sur les systèmes d'atterrissage basés sur la vision (Vision-Based Landing), avec pour objectif à long terme d'accompagner la certification des modèles d'IA critiques. L'étude porte sur des méthodes d'explicabilité basées sur les concepts afin de mieux comprendre les représentations internes des modèles et d'expliquer concrètement pourquoi l'IA prend la décision d'identifier un objet comme étant une piste.",
+      "Travail sur l'IA explicable appliquée à un modèle de vision par ordinateur utilisé pour la détection de pistes dans un contexte d'atterrissage basé sur la vision.",
     responsibilities: [
-      "Application d'une méthode d'explicabilité basée sur les concepts à des modèles de détection d'objets (YOLO-NAS Pose) afin d'identifier et d'analyser les représentations visuelles apprises.",
-      "Mise en place d'expériences pour extraire les activations internes, reconstruire les représentations latentes et vérifier la fidélité des prédictions reconstruites.",
-      "Évaluation de la stabilité, de l'importance et de la localisation des concepts selon différents paramètres expérimentaux.",
-      "Exécution des expériences sur AWS EC2, gestion des données et résultats avec Amazon S3, et production de visualisations pour l'interprétation des modèles.",
+      "Adaptation d'une méthode d'IA explicable à un modèle YOLO-NAS Pose multi-échelle sous PyTorch afin d'identifier les caractéristiques visuelles influençant les détections du modèle.",
+      "Développement d'un protocole expérimental pour extraire, sélectionner et analyser les représentations visuelles du modèle, en évaluant leur qualité, leur stabilité et leur capacité à préserver l'information utile aux détections.",
+      "Évaluation quantitative de la fidélité des détections à l'aide de métriques de détection et de correspondance spatiale, avec 90,5 % de précision et un PR-AUC de 0,776.",
+      "Analyse du comportement du modèle à différentes distances de la piste afin d'identifier les informations visuelles les plus influentes et d'étudier leur évolution au cours de l'approche.",
     ],
-    stack: ['Python', 'PyTorch', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'Xplique', 'Holistic CRAFT', 'NumPy', 'Pandas', 'Matplotlib', 'AWS EC2', 'Amazon S3', 'Git'],
+    stack: [
+      'Python',
+      'PyTorch',
+      'YOLO-NAS Pose',
+      'Xplique',
+      'Holistic CRAFT',
+      'NumPy',
+      'Pandas',
+      'Matplotlib',
+      'AWS EC2',
+      'Amazon S3',
+      'Git',
+    ],
   },
   {
     id: 'responsibio-rd-intern-2025',
-    title: 'Stagiaire Data Science',
-    company: 'CENOMEXA – Responsibio',
+    title: 'Stagiaire Data Scientist',
+    company: 'Responsibio',
     period: 'Mai 2025 – Août 2025 · Stage',
     description:
-      "Développement d’un système de classification automatique des vocalisations de souris et de rats pour la bio-surveillance animale. Le projet combine traitement audio, extraction de caractéristiques profondes, réduction dimensionnelle et Machine Learning classique.",
+      "Travail en data science sur l'analyse de vocalisations de souris pour la classification du bien-être animal.",
     responsibilities: [
-      "Préparation des enregistrements bioacoustiques et transformation des signaux audio en spectrogrammes de Mel.",
-      "Extraction de 2 048 caractéristiques avec un modèle ResNet50 pré-entraîné, puis réduction à 58 composantes principales en conservant 86 % de la variance.",
-      "Entraînement et évaluation de classifieurs SVM avec validation croisée stratifiée et pondération des classes.",
-      "Obtention d’environ 80 % de précision et évaluation de la robustesse au bruit et au changement de domaine entre espèces.",
+      "Collecte et préparation de données audio de vocalisations de souris et de leurs métadonnées afin de construire un jeu de données pour la classification du bien-être animal.",
+      "Développement d'un pipeline de classification audio utilisant des mél-spectrogrammes, l'extraction de caractéristiques, une réduction de dimension par PCA et un SVM linéaire.",
+      "Évaluation du modèle avec une validation croisée à 5 folds, réduction de 2048 à 58 caractéristiques en conservant 86 % de la variance et obtention d'environ 79 % de prédictions correctes.",
     ],
-    stack: ['Python', 'PyTorch', 'ResNet50', 'Librosa', 'scikit-learn', 'NumPy', 'Pandas', 'PCA', 'SVM'],
+    stack: [
+      'Python',
+      'scikit-learn',
+      'NumPy',
+      'Pandas',
+      'PCA',
+      'SVM',
+    ],
   },
 ]
 
 const skillsFr = [
   {
-    category: 'Programmation et analyse de données',
-    items: ['Python', 'SQL', 'NumPy', 'Pandas', 'Java', 'C/C++', 'JavaScript'],
+    category: 'Langages de programmation',
+    items: ['Python', 'Java', 'C', 'C++'],
   },
   {
-    category: 'Machine Learning et Deep Learning',
-    items: ['scikit-learn', 'PyTorch', 'TensorFlow/Keras', 'SVM', 'Clustering', 'Boosting', 'CNN', 'Transfer Learning', 'Fine-tuning', 'Évaluation de modèles'],
+    category: 'Machine Learning & Computer Vision',
+    items: [
+      'Object Detection',
+      'Pose Estimation',
+      'YOLO',
+      'Explainable AI (XAI)',
+      'PCA',
+      'NMF',
+    ],
   },
   {
-    category: 'Vision par ordinateur',
-    items: ['OpenCV', 'YOLOv8 Pose', 'YOLO-NAS Pose', 'ByteTrack', 'Détection d’objets', 'Traitement d’images', 'Suivi vidéo'],
+    category: 'Frameworks & bibliothèques',
+    items: [
+      'PyTorch',
+      'TensorFlow',
+      'scikit-learn',
+      'OpenCV',
+      'NumPy',
+      'Pandas',
+    ],
   },
   {
-    category: 'Traitement automatique du langage',
-    items: ['Hugging Face Transformers', 'BERT', 'CamemBERT', 'spaCy', 'NLTK', 'Classification de tokens', 'Embeddings'],
+    category: 'NLP & IA générative',
+    items: [
+      'RAG',
+      'Transformers',
+      'Hugging Face',
+      'CamemBERT',
+      'Embeddings',
+    ],
   },
   {
-    category: 'IA de confiance',
-    items: ['IA explicable (XAI)', 'Xplique', 'CRAFT / Holistic CRAFT', 'Explications par concepts', 'Méthodes d’attribution', 'Évaluation de la fidélité et de la robustesse'],
+    category: 'Data Engineering & Cloud',
+    items: [
+      'AWS (EC2, S3)',
+      'SQL',
+      'PostgreSQL',
+      'MongoDB',
+      'Apache Hop',
+      'Data Visualization (Matplotlib, Plotly)',
+    ],
   },
   {
-    category: 'Data Engineering et bases de données',
-    items: ['ETL', 'Apache Hop', 'Talend', 'OLAP', 'PostgreSQL', 'MySQL', 'MongoDB', 'SQLite'],
+    category: 'Outils de développement',
+    items: [
+      'Git',
+      'GitHub',
+      'Linux',
+      'Conda',
+      'Jupyter Notebook',
+      'Google Colab',
+      'VS Code',
+    ],
   },
   {
-    category: 'API, Cloud et outils d’ingénierie',
-    items: ['FastAPI', 'GraphQL', 'Docker', 'AWS EC2', 'Amazon S3', 'Git/GitHub', 'Linux', 'Jupyter', 'Matplotlib', 'D3.js'],
+    category: 'Technologies Web',
+    items: ['HTML', 'CSS', 'JavaScript'],
   },
 ]
 
